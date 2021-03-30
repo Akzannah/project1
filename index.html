@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our web page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../Project/img/container.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    .navigation{
+        display: flex;
+        padding: 10px 10px;
+        justify-content: space-between;
+        /* background-color: #808080; */
+        height: auto;
+    }
+    .logo{
+        background: url("../Project/img/logo.jpg");
+        width: 7%;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .nav-links{
+        text-transform: uppercase;
+        padding: 14px 16px;
+        padding-top: 25px;
+    }
+    .nav-links a{
+        color: antiquewhite;
+        padding-right: 15px;
+        text-decoration: none;
+        padding: 14px 16px;
+    }
+    .nav-links a:hover{
+        border: 1px solid wheat;
+    }
+    .main h1{
+        color: goldenrod;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 170px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        margin-left: 548px;
+    }
+    .btn button{
+        padding: 12px 20px;
+        margin-top: 50px;
+    }
+    .btn1{
+        background-color: #ccc;
+        border: 0 solid white;
+        color: #fff;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .btn2{
+        background-color: transparent;
+        border: 1px solid #ccc;
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .btn1:hover{
+        background-color: #808080;
+        color: #606060;
+    }
+    .btn2:hover{
+        background-color: #ccc;
+        color: #606060;
+    }
+    .footer{
+        background-color: #ccc;
+        height: 20px;
+        margin-top: 192px;
+        text-align: center;
+    }
+    @media screen and (max-width:  600px){
+        .container{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../Project/img/container.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 735px;
+            width: 100%;
+        }
+        .navigation{
+            display: flex;
+            padding: 10px 10px;
+            height: auto;
+        }
+        .logo{
+            background: url("../Project/img/logo.jpg");
+            width: 30%;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-links{
+            flex-direction: column;
+            text-transform: uppercase;
+            padding: 14px 16px;
+            padding-top: 25px;
+        }
+        .main h1{
+            color: goldenrod;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 150px;
+        }
+        .btn{
+            align-items: center;
+            flex-direction: row;
+            padding-top: 20px;
+            margin-left: 40px;
+            flex-direction: column;
+        }
+        .btn1{
+            background-color: transparent;
+            border: 1px solid white;
+            color: #fff;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+        .btn2{
+            margin-right: 35px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: #fff;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .footer{
+            background-color: #ccc;
+            height: 20px;
+            margin-top: 200px;
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="logo"></div>
+            <div class="nav-links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Service</a>
+            </div>
+        </div>
+        <div class="main">
+            <h1>WELCOME TO A-FLEX<br>COMPUTER TECHNOLOGY</h1>
+            <div class="btn">
+                <a href="login.html"><button class="btn1">LOGIN</button></a>
+                <a href="signup.html"><button class="btn2">SIGN UP</button></a>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>&copy; Copyright 2021</footer>
+        </div>
+    </div>
+</body>
+</html>

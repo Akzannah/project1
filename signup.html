@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/sign\ up.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    h2{
+        color: burlywood;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .content{
+        background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/images\ \(2\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 450px;
+        margin: 20px 450px;
+        padding: 80px;
+        border-radius: 15px ;
+        overflow: hidden;
+        margin: auto;
+    }
+    label{  
+        color: #08ffd1;  
+        font-size: 17px;  
+    }
+    #fname{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    }
+    #lname{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    }
+    #gender{
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;
+    }
+    #email{
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;
+    }
+    #Pass{
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;
+    }
+    #log{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 17px;  
+        padding-left: 7px;  
+        color: #333;
+        cursor: pointer;
+    }
+    small{  
+        color: white;  
+        font-size: 17px; 
+        text-align: center;
+    }
+    a{  
+        color: blue;
+    }
+    .footer{
+        background-color: #ccc;
+        height: 20px;
+        margin-top: 70px;
+        text-align: center;    
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Fill in the details below to create an account.</h2>
+        <div class="content">
+            <form action="">
+            <label><b>First name:</b></label>
+            <input type="text" name="fname" id="fname" placeholder="First name">
+            <br><br>
+            <label><b>Last name:</b></label>
+            <input type="text" name="lname" id="lname" placeholder="Last name">
+            <br><br>
+            <label><b>Gender:</b></label>
+            <input type="text" name="gender" id="gender" placeholder="Gender">
+            <br><br>
+            <label><b>E-mail:</b></label>
+            <input type="text" name="email" id="email" placeholder="@gmail.com">
+            <br><br>
+            <label><b>Password:</b></label>
+            <input type="password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+            <input type="button" name="log" id="log" value="sign up">
+            <small><h3>Already have an account? <a href="/login.html">Login</a></h3></small>
+        </div>
+        <div class="footer">
+            <footer>&copy; Copyright 2021</footer>
+        </div>
+    </div>
+</body>
+</html>
